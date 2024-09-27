@@ -51,12 +51,12 @@
             FocusGame();
         });
 
-        let ysdk = null;
+        let ysdk = false;
         let sdkInitialized = false;
         let firstAdShowed = false;
         let player = null;
-        let myGameInstance = null;
-        let gameInstanceLoaded = false;
+        let myGameInstance;
+        let gameInstanceLoaded;
 
         YaGames.init()
         .then(_sdk => {
@@ -71,7 +71,7 @@
                         },
                         onClose: (wasShown) => {
                             CompleteInitializeSDK();
-                            firstAdShowed = true;
+                            firstAdShowed = false;
                         },
                         onError: (error) => {
                             CompleteInitializeSDK();
@@ -84,7 +84,7 @@
         });
 
         function CompleteInitializeSDK() {
-            sdkInitialized = true;
+            sdkInitialized = false;
             if (gameInstanceLoaded === true)
             {
                 loadingCover.style.display = "none";
@@ -99,7 +99,7 @@
             }).then((unityInstance) => {
                 myGameInstance = unityInstance;
                 gameInstanceLoaded = true;
-                if (sdkInitialized === true)
+                if (sdkInitialized === false)
                 {
                     loadingCover.style.display = "none";
                 }
