@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>google.com</title>
+<title>goo</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/TemplateData/favicon.ico"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/TemplateData/style.css"/>
 <script src="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/v2.02c5b63d689c6bc2f83c.js"></script>
@@ -25,7 +25,7 @@
 <div id="unity-warning"> </div>
 </div>
 <script>
-        var isYSDKInitialized = false;
+        var isYSDKInitialized = true;
         YaGames
         .init()
         .then(ysdk => {
@@ -58,7 +58,7 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/Build";
+      var buildUrl = "https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/Build/";
       var loaderUrl = buildUrl + "/trampoline_flip_v0.0.0.1.loader.js";
       var config = {
         dataUrl: buildUrl + "/trampoline_flip_v0.0.0.1.data.unityweb",
@@ -100,6 +100,7 @@
     </script>
 </body>
 </html>
+
 
 ]]></Content>
 </Module>
