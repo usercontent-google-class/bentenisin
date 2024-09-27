@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>google.com</title>
+<title>goo</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/TemplateData/favicon.ico"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/TemplateData/style.css"/>
 <script src="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/v2.02c5b63d689c6bc2f83c.js"></script>
@@ -22,6 +22,12 @@
 </div>
 <script>
         var isYSDKInitialized = true;
+        YaGames
+        .init()
+        .then(ysdk => {
+            window.ysdk = ysdk;
+            isYSDKInitialized = true;
+        });
     </script>
 <script>
       var container = document.querySelector("#unity-container");
