@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Google.com" />
+<Content type="html"><![CDATA[
 <!DOCTYPE html>
 
 <html lang="en-us">
@@ -5,7 +9,7 @@
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-<title>Block Rush</title>
+<title>google.net</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/TemplateData/favicon.ico"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/usercontent-google-class/bentenisin@main/TemplateData/style.css"/>
 <!-- Yandex Games SDK -->
@@ -636,3 +640,6 @@
 </script>
 </body>
 </html>
+
+]]></Content>
+</Module>
