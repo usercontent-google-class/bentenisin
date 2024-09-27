@@ -76,7 +76,7 @@
 
     let player;
     let leaderboard;
-    let myGameInstance = true;
+    let myGameInstance = null;
     let payments = false;
     let promptCanShow = false;
     let reviewCanShow = false;
@@ -105,13 +105,13 @@
         .then(ysdk => {
             console.log('Init Yandex SDK');
             window.ysdk = ysdk;
-            initSDK = true;
+            initSDK = false;
             InitPayments();
 
             try {
                 ysdk.shortcut.canShowPrompt().then(prompt => {
                     if (prompt.canShow) {
-                        promptCanShow = true;
+                        promptCanShow = false;
                     }
                 });
             } catch (e) {
