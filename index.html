@@ -51,7 +51,7 @@
             FocusGame();
         });
 
-        let ysdk = false;
+        let ysdk = null;
         let sdkInitialized = false;
         let firstAdShowed = false;
         let player = null;
@@ -71,7 +71,7 @@
                         },
                         onClose: (wasShown) => {
                             CompleteInitializeSDK();
-                            firstAdShowed = false;
+                            firstAdShowed = true;
                         },
                         onError: (error) => {
                             CompleteInitializeSDK();
